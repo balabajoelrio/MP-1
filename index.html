@@ -36,34 +36,34 @@
             <h3>Login</h3>
             <br>
             <form class="needs-validation" novalidate action="index.html">
-                <div class="col"><!--sample inline only, can be change to stack form-->
-                    <label for="usernamevalidation" class="form-label"></label> Username </label>
-                    <input type="username" class="form-control" id="usernamevalidation" placeholder="Enter username" required>
-                    <div class="valid-feedback"></div>
-                    <div class="invalid-feedback">Please enter username.</div>
-                </div>
-                <br>
-                <div class="col"><!--Must use different "for value" -->
-                    <label for="passwordvalidation" class="form-label"></label> Password </label>
-                    <input type="password" class="form-control" id="passwordvalidation" placeholder="Enter password" required>
-                    <div class="valid-feedback"></div>
-                    <div class="invalid-feedback">Please enter password.</div>
-                </div>
-                <br>
-                <div class="form-check">
-                  <label class="form-check-label">
-                      <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> Remember Me
-                  </label>
-                </div>
-                <br>
-                <div class="col">
-                    <button type="submit" class="btn btn-outline-warning"> Sign in</button>
-                </div>
+              <div class="col"><!--sample inline only, can be change to stack form-->
+                <label for="usernamevalidation" class="form-label"></label> Username </label>
+                <input type="username" class="form-control" id="usernamevalidation" placeholder="Enter username" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please enter username.</div>
+              </div>
+              <br>
+              <div class="col"><!--Must use different "for value" -->
+                <label for="passwordvalidation" class="form-label"></label> Password </label>
+                <input type="password" class="form-control" id="passwordvalidation" placeholder="Enter password" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please enter password.</div>
+              </div>
+              <br>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> Remember Me</label>
+                  <span id="forgetpass" class="form-text"><a href="#">Forget Password?</a></span>
+              </div>
+              <br>
+              <div class="col">
+                <button type="submit" class="btn btn-outline-warning"> Sign in</button>
+              </div>
             </form>
+          </div>
         </div>
-        </div>
-        <div class="modal-footer">
-          <span id="forgetpass" class="form-text"><a href="#">Forget Password?</a></span>
+        <div class="modal-footer modal-footer-center">
+          
           <label>Don't have an account? <a href="#" style="text-decoration: none;"><b>Sign Up</b></a></label>
         </div>
       </div>
