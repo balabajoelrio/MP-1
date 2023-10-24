@@ -15,8 +15,78 @@
       <div class="p-2" href="#">Social Media</div>
     </div>
     <div class="d-flex flex-row-reverse">
-      <div class="p-2 text-warning" href="#"><b>Sign Up</b></div>
-      <div class="p-2 text-warning" href="#"><b>Login</b></div>
+      <div>
+        <button type="button" class="btn btn-warning p-1 m-1" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
+      </div>
+      <div>
+        <button type="button" class="btn btn-warning p-1 m-1" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary text-warning">
+          <h1 class="modal-title fs-5" id="login">SpeedBuild PH</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Login</h3>
+            <br>
+            <form class="needs-validation" novalidate action="index.html">
+                <div class="col"><!--sample inline only, can be change to stack form-->
+                    <label for="usernamevalidation" class="form-label"></label> Username </label>
+                    <input type="username" class="form-control" id="usernamevalidation" placeholder="Enter username" required>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">Please enter username.</div>
+                </div>
+                <br>
+                <div class="col"><!--Must use different "for value" -->
+                    <label for="passwordvalidation" class="form-label"></label> Password </label>
+                    <input type="password" class="form-control" id="passwordvalidation" placeholder="Enter password" required>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">Please enter password.</div>
+                </div>
+                <br>
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> Remember Me
+                  </label>
+                </div>
+                <br>
+                <div class="col">
+                    <button type="submit" class="btn btn-outline-warning"> Sign in</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <span id="forgetpass" class="form-text"><a href="#">Forget Password?</a></span>
+          <label>Don't have an account? <a href="#" style="text-decoration: none;"><b>Sign Up</b></a></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupnmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-outline-warning">Submit</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -231,6 +301,26 @@
       
   </footer>
 
+  <script>
+    (function () {
+        'use strict'
+    
+    
+    var forms = document.querySelectorAll('.needs-validation')
+    
+    Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+    event.preventDefault()
+    event.stopPropagation()
+    }
+    
+    form.classList.add('was-validated')
+    }, false)
+    })
+    })()
+</script>
 
 </body>
 </html>
