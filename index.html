@@ -33,6 +33,10 @@
         margin-top: 0;
       }
 
+      .signup {
+        text-decoration: none;
+      }
+
     </style>
 </head>
 <body>
@@ -40,19 +44,21 @@
   <!--Header-->
   <div class="bg-dark bg-gradient p-1 ">
 
-    <div class="d-flex mt-3">
-      <div class="me-auto p-2 text-warning" >Merchant Center</div>
+    <div class="d-flex">
+      <div class="me-auto p-2 text-warning" type="button" href="#">Merchant Center</div>
+      <div class="d-flex align-items-end">
       <div>
         <button type="button" class="btn btn-border-0 text-warning" data-bs-toggle="modal" data-bs-target="#login">Login</button>
       </div>
 
       <div>
-        <button type="button" class="btn btn-border-0 text-warning" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
+        <button type="button" class="btn btn-border-0 text-warning"><a href="signup.html" class="signup text-warning"> Sign Up </a></button>
       </div>
+    </div>
     </div>
 
     <img src="sbph.png" class="img-fluid mx-auto d-block" alt="logo" id="logo">
-    <h3 class="text-light text-center">Your neigboorhood home construction materials supplier!</h3>
+    <h3 class="text-light text-center fst-italic" style="font-family: cursive;">Your neigboorhood home construction materials supplier!</h3>
     
   </div>
 
@@ -96,79 +102,12 @@
           </div>
         </div>
         <div class="modal-footer">
-          <label>Don't have an account? <a href="#" style="text-decoration: none;"><b>Sign Up</b></a></label>
+          <label>Don't have an account? <a href="signup.html" style="text-decoration: none;"><b>Sign Up</b></a></label>
         </div>
       </div>
     </div>
   </div>
 
-  <!--Sign Up-->
-  <div class="modal" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signupnmodal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-secondary text-warning">
-          <h1 class="modal-title fs-5" id="signup">SpeedBuild PH</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <h3>Sign Up</h3>
-            <br>
-            <form class="needs-validation" novalidate action="index.html">
-              <div class="col">
-                <label for="fnamevalidation" class="form-label"></label> First Name </label>
-                <input type="text" class="form-control" id="fnamevalidation" placeholder="Enter first name" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please enter first name.</div>
-              </div>
-              <br>
-              <div class="col">
-                <label for="lnamevalidation" class="form-label"></label> Last Name </label>
-                <input type="text" class="form-control" id="lnamevalidation" placeholder="Enter last name" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please enter last name.</div>
-              </div>
-              <br>
-              <div class="col">
-                <label for="phonevalidation" class="form-label"></label> Phone Number </label>
-                <input type="phonenumber" class="form-control" id="phonevalidation" placeholder="Enter phone number" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please enter valid phone number.</div>
-              </div>
-              <br>
-              <div class="col">
-                <label for="emailvalidation" class="form-label"></label> Email Address </label>
-                <input type="email" class="form-control" id="emailvalidation" placeholder="Enter email address" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please enter valid email address.</div>
-              </div>
-              <br>
-              <p style="text-align: center;" class="fw-lighter">----------------------- OR -----------------------</p>
-              <p>Connect Account:</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                <button type="submit" class="btn btn-primary" action="#">facebook</button>
-                <button type="submit" class="btn btn-danger" action="#">Gmail</button>
-              </div>
-              <br>
-              <hr>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> By signing up, you agree to SpeedBuild PH's <a href="#"> Terms of Services</a> & <a href="#">Privacy Policy</a></label>
-              </div>
-              <br>
-              <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-warning"> Next</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <label> Already have an account? <a href="#" style="text-decoration: none;"><b>Sign In</b></a></label>
-        </div>
-      </div>
-    </div>
-  </div>
-  
   <!--Navigation Bar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -364,6 +303,26 @@
         </div>
       </div>
       
+      <div class="card text-center m-1" style="width: 12rem;">
+        <img src="fake image" class="card-img-" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hammer</h5>
+          <p class="card-text">Wooden Handle</p>
+          <p class="card-text"> <b>Php. 250.00</b></p>
+          <a href="#" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div> 
+
+      <div class="card text-center m-1" style="width: 12rem;">
+        <img src="fake image" class="card-img-" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hammer</h5>
+          <p class="card-text">Wooden Handle</p>
+          <p class="card-text"> <b>Php. 250.00</b></p>
+          <a href="#" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div> 
+
       <div class="card text-center m-1" style="width: 12rem;">
         <img src="fake image" class="card-img-" alt="...">
         <div class="card-body">
