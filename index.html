@@ -28,26 +28,32 @@
         background-size: cover;
       }
 
+      #logo{
+        opacity: 0.6;
+        margin-top: 0;
+      }
+
     </style>
 </head>
 <body>
 
   <!--Header-->
-  <div class="bg-dark bg-gradient p-3 ">
-    <div class="d-flex flex-row mb-3 text-light">
-      <div class="p-2 text-warning" href="#"><b>Merchant</b></div>
-      <div class="p-2" href="#">Get App</div>
-      <div class="p-2" href="#">Social Media</div>
-    </div>
-    <div class="d-flex flex-row-reverse">
+  <div class="bg-dark bg-gradient p-1 ">
+
+    <div class="d-flex mt-3">
+      <div class="me-auto p-2 text-warning" >Merchant Center</div>
       <div>
-        <button type="button" class="btn btn-outline-warning p-1 m-1" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
+        <button type="button" class="btn btn-border-0 text-warning" data-bs-toggle="modal" data-bs-target="#login">Login</button>
       </div>
-       
+
       <div>
-        <button type="button" class="btn btn-outline-warning p-1 m-1" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+        <button type="button" class="btn btn-border-0 text-warning" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
       </div>
     </div>
+
+    <img src="sbph.png" class="img-fluid mx-auto d-block" alt="logo" id="logo">
+    <h3 class="text-light text-center">Your neigboorhood home construction materials supplier!</h3>
+    
   </div>
 
   <!--Sign In-->
@@ -173,7 +179,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Hot Deals!</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Hot Deals!</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Catalog</a></li>
           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
             <ul class="dropdown-menu">
@@ -257,15 +263,17 @@
     <i class="bi bi-cart4" style="font-size: 2rem;" id="cart"></i>
     <div class="w-50 shadow" id="searchgroup">
       <div class="input-group">
-        <input type="search" class="form-control " placeholder="Search materials" id="search">
-        <button type="submit" class="border rounded-end"><i class="bi bi-search"></i></button>
+        <input type="search" class="form-control" placeholder="Search materials" id="search">
+        <button type="submit" class="border rounded-end">
+          <i class="bi bi-search" href="#">
+          </i></button>
       </div>   
     </div>
   </div>  
 
   <!--Products-->
-  <div class="container-fluid m-1 px-3 justify-content-md-center">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
       <div class="card text-center m-1" style="width: 12rem;">
         <img src="fake image" class="object-fit-lg-contain" alt="..."> 
         <div class="card-body">
