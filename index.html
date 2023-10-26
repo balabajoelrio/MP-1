@@ -29,20 +29,30 @@
       }
 
       #logo{
-        opacity: 0.6;
         margin-top: 0;
+        height: +50px;
       }
 
       .signup {
         text-decoration: none;
       }
 
+      .gradiant {
+        height: 200px;
+        background-color: rgb(36, 35, 35); /* For browsers that do not support gradients */
+        background-image: linear-gradient(rgb(36, 35, 35), rgb(93, 92, 92));
+      }
+
+li a:hover {
+  background-color: #d6d6d6;
+}
+
     </style>
 </head>
 <body>
 
   <!--Header-->
-  <div class="bg-dark bg-gradient p-1 ">
+  <div class="gradiant">
 
     <div class="d-flex">
       <div class="me-auto p-2 text-warning" type="button" href="#">Merchant Center</div>
@@ -57,8 +67,8 @@
     </div>
     </div>
 
-    <img src="sbph.png" class="img-fluid mx-auto d-block" alt="logo" id="logo">
-    <h3 class="text-light text-center fst-italic" style="font-family: cursive;">Your neigboorhood home construction materials supplier!</h3>
+    <h1 class="text-warning text-center mt-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">SpeedBuild PH</h1>
+    <p class="text-light text-center fst-italic" style="font-family: cursive;">Your neigboorhood home construction materials supplier!</p>
     
   </div>
 
@@ -111,7 +121,7 @@
   <!--Navigation Bar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand text-warning" href="#"><strong>SpeedBuild PH</strong></a>
+      <a class="navbar-brand" href="#"><img src="sbph.png" alt="logo" id="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
