@@ -10,77 +10,78 @@
 </head>
 <body>
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-4">
-                <div class="form-control">
-                    <form>
-                        <div class="m-3">
-                            <label for="store" class="store">Store</label>
-                            <input type="text" class="form-control" placeholder="Enter store name" id="store"> 
-                            <br>
-                            <label for="address" class="address">Address</label>
-                            <input type="text" class="form-control" placeholder="Enter address" id="address">
-                            <br>
-                            <div class="row">
-                                <div class="col">
-                                    <label for="city" class="city">City</label>
-                                </div>
-                                <div class="col">
-                                    <label for="zipcode" class="zip">Zip Code</label>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col">
-                                    <input type="city" class="form-control" placeholder="Enter City" id="city">
-                                </div>
-                                <div class="col">
-                                    <input type="zipcode" class="form-control" placeholder="Enter zip code">
-                                </div>
-                            </div>
+    <div class="container mt-5">
+        <div class="maps">        
+            <form class="form-control">
+                <div class="m-3">
+                    <label for="store" class="store">Store</label>
+                    <input type="text" class="form-control" placeholder="Enter store name" id="store"> 
+                    <br>
+                    <label for="address" class="address">Address</label>
+                    <input type="text" class="form-control" placeholder="Enter address" id="address">
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="city" class="city">City</label>
                         </div>
-                        <hr>
-                        <div class="row m-3">
-                            <div class="col m-1">
-                                <label for="maps-generator" class="maps">Map Type</label>
-                                <br>
-                                <br>
-                                <label for="range" class="Zoom">Zoom</label>
-                            </div>
-                            <div class="col m-1">
-                                <input type="text" class="form-control" placeholder="Map type">
-                                <input type="text" class="form-control" placeholder="Zoom range">
-                            </div>
+                        <div class="col">
+                            <label for="zipcode" class="zip">Zip Code</label>
                         </div>
-                        <hr>
-                        <div class="row m-3">
-                            <div class="col m-1">
-                                <label for="maps-generator" class="maps">Map Height</label>
-                                <input type="range" class="range">
-                                <br>
-                                <br>
-                                <label for="range" class="Zoom">Map Withd</label>
-                                <input type="range" class="range">
-                            </div>
-                            <div class="col m-1">
-                                <input type="text" class="form-control" placeholder="Map type">
-                                <input type="text" class="form-control" placeholder="Zoom range">
-                            </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <input type="city" class="form-control" placeholder="Enter City" id="city">
                         </div>
+                        <div class="col">
+                            <input type="zipcode" class="form-control" placeholder="Enter zip code">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row m-3">
+                    <div class="col m-1">
+                        <label for="maps-generator" class="maps">Map Type</label>
+                        <br>
+                        <br>
+                        <label for="range" class="Zoom">Zoom</label>
+                    </div>
+                    <div class="col m-1">
+                        <input type="text" class="form-control" placeholder="Map type">
+                        <input type="text" class="form-control" placeholder="Zoom range">
+                    </div>
+                </div>
+                <hr>
+                <div class="row m-3">
+                    <div class="col m-1">
+                        <label for="maps-generator" class="maps">Map Height</label>
+                        <input type="range" class="range">
+                        <br>
+                        <br>
+                        <label for="range" class="Zoom">Map Withd</label>
+                        <input type="range" class="range">
+                    </div>
+                    <div class="col m-1">
+                        <input type="text" class="form-control" placeholder="Map type">
+                        <input type="text" class="form-control" placeholder="Zoom range">
+                    </div>
+                </div>
                         
-                    </form>
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="d-grid">
-                    <iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=200&amp;height=400&amp;hl=en&amp;q=%20Talisay%20City+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                    </iframe><a href='https://maps-generator.com/'></a>
-                </div>
-            </div>   
+            </form>
         </div>
+
+        <div class="gmap_canvas">
+            <div class="d-grid">
+                <iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=200&amp;height=400&amp;hl=en&amp;q=%20Talisay%20City+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe><a href='https://maps-generator.com/'></a>
+            </div>
+        </div>   
+
     </div>
+            
+            
+        
+
 
     
 </body>
