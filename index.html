@@ -130,6 +130,52 @@
     </div>
   </div>
 
+ <!--Sign In through cart-->
+ <div class="modal" id="cartlogin" tabindex="-1" aria-labelledby="cartloginmodal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-secondary text-warning">
+        <h1 class="modal-title fs-5" id="cartlogin">SpeedBuild PH</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <h3>Login</h3>
+          <br>
+          <form class="needs-validation" novalidate action="cart.html">
+            <div class="col">
+              <label for="usernamevalidation" class="form-label"></label> Username </label>
+              <input type="username" class="form-control" id="usernamevalidation" placeholder="Enter username" required>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter username.</div>
+            </div>
+            <br>
+            <div class="col">
+              <label for="passwordvalidation" class="form-label"></label> Password </label>
+              <input type="password" class="form-control" id="passwordvalidation" placeholder="Enter password" required>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter password.</div>
+            </div>
+            <br>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> Remember Me</label>
+            </div>
+            <br>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-warning"> Sign in </button>
+            </div>
+            <span id="forgetpass" class="justify-content-md-center"><a href="forgetpass.html">Forget Password?</a></span>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <label>Don't have an account? <a href="signup.html" style="text-decoration: none;"><b>Sign Up</b></a></label>
+      </div>
+    </div>
+  </div>
+</div>
+  
   <!--Navigation Bar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -224,7 +270,7 @@
 
   <!--Search Bar & Cart-->
   <div class="container p-3">
-    <a href="cart.html"><i class="bi bi-cart4" style="font-size: 2rem;" id="cart"></i></a>
+    <i class="bi bi-cart4" style="font-size: 2rem;" id="cart" data-bs-toggle="modal" data-bs-target="#cartlogin"></i>
     <div class="w-50 shadow" id="searchgroup">
       <div class="input-group">
         <input type="search" class="form-control" placeholder="Search materials" id="search">
