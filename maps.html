@@ -6,6 +6,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
     <title>SpeedBuild PH Near Me</title>
     <style>
          .modal-footer {
@@ -26,6 +31,36 @@
       li a:hover {
         background-color: #f6e8b3;
       }
+
+      #map{
+        height: 100%;
+      }
+
+      html,body {
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+      }
+
+      .custom-map-control-button {
+        background-color: #fff;
+        border: 0;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px -1px rgba(0,0,0,0.3);
+        margin: 10px;
+        padding: 0 0.5em;
+        font: 400 18px Roboto, Arial, sans-serif;
+        overflow: hidden;
+        height: 40px;
+        cursor: pointer;
+
+      }
+
+      .custom-map-control-button:hover {
+        background: rgb(235, 235, 235);
+      }
+      
+
     </style>
 </head>
 <body class="bg-dark-subtle">
@@ -149,83 +184,75 @@
     </div>
   </nav>
 
-    <div class="container mt-5">
-        <div class="maps">        
-            <form class="form-control shadow">
-                <div class="m-3">
-                    <label for="store" class="store">Store</label>
-                    <input type="text" class="form-control" placeholder="Enter store name" id="store"> 
-                    <br>
-                    <label for="address" class="address">Address</label>
-                    <input type="text" class="form-control" placeholder="Enter address" id="address">
-                    <br>
-                    <div class="row">
-                        <div class="col">
-                            <label for="city" class="city">City</label>
-                        </div>
-                        <div class="col">
-                            <label for="zipcode" class="zip">Zip Code</label>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col">
-                            <input type="city" class="form-control" placeholder="Enter City" id="city">
-                        </div>
-                        <div class="col">
-                            <input type="zipcode" class="form-control" placeholder="Enter zip code">
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="row m-3">
-                    <div class="col m-1">
-                        <label for="maps-generator" class="maps">Map Type</label>
-                        <br>
-                        <br>
-                        <label for="range" class="Zoom">Zoom</label>
-                    </div>
-                    <div class="col m-1">
-                        <input type="text" class="form-control" placeholder="Map type">
-                        <input type="text" class="form-control" placeholder="Zoom range">
-                    </div>
-                </div>
-                <hr>
-                <div class="row m-3">
-                    <div class="col m-1">
-                        <label for="maps-generator" class="maps">Map Height</label>
-                        <input type="range" class="range">
-                        <br>
-                        <br>
-                        <label for="range" class="Zoom">Map Withd</label>
-                        <input type="range" class="range">
-                    </div>
-                    <div class="col m-1">
-                        <input type="text" class="form-control" placeholder="Map type">
-                        <input type="text" class="form-control" placeholder="Zoom range">
-                    </div>
-                </div>
-                        
-            </form>
-        </div>
-
-        <div class="gmap_canvas shadow">
-            <div class="d-grid">
-                <iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=200&amp;height=400&amp;hl=en&amp;q=%20Talisay%20City+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                </iframe><a href='https://maps-generator.com/'></a>
-            </div>
-        </div>   
+    <div id="map">
 
     </div>
+
+    
             
     <footer class="bg-secondary p-3 mb-0 bottom-0" style="color: white;">
-    <div class="text-center">
-        <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
-        <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
+        <div class="text-center">
+            <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
+            <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
         </div>
-      </footer>
-        
+    </footer>
 
+   
+    
+    <script>
+    let map, infoWindow;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 6,
+  });
+  infoWindow = new google.maps.InfoWindow();
+
+  const locationButton = document.createElement("button");
+
+  locationButton.textContent = "Pan to Current Location";
+  locationButton.classList.add("custom-map-control-button");
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+  locationButton.addEventListener("click", () => {
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+
+          infoWindow.setPosition(pos);
+          infoWindow.setContent("Location found.");
+          infoWindow.open(map);
+          map.setCenter(pos);
+        },
+        () => {
+          handleLocationError(true, infoWindow, map.getCenter());
+        },
+      );
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+  });
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(
+    browserHasGeolocation
+      ? "Error: The Geolocation service failed."
+      : "Error: Your browser doesn't support geolocation.",
+  );
+  infoWindow.open(map);
+}
+
+window.initMap = initMap;
+
+</script>
 
     
 </body>
