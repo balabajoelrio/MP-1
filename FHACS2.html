@@ -62,13 +62,7 @@
     <div class="d-flex">
       <div class="me-auto p-2" type="button"> <a href="merchantsignin.html" style="text-decoration: none; color:rgb(255, 183, 0);">Merchant Center</a></div>
       <div class="d-flex align-items-end">
-      <div>
-        <button type="button" class="btn btn-border-0 text-warning" data-bs-toggle="modal" data-bs-target="#login">Login</button>
-      </div>
-
-      <div>
-        <button type="button" class="btn btn-border-0 text-warning"><a href="signup.html" class="signup text-warning"> Sign Up </a></button>
-      </div>
+      
     </div>
     </div>
 
@@ -122,52 +116,6 @@
       </div>
     </div>
   </div>
-
- <!--Sign In through cart-->
- <div class="modal" id="cartlogin" tabindex="-1" aria-labelledby="cartloginmodal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header bg-secondary text-warning">
-        <h1 class="modal-title fs-5" id="cartlogin">SpeedBuild PH</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <h3>Login</h3>
-          <br>
-          <form class="needs-validation" novalidate action="cart.html">
-            <div class="col">
-              <label for="usernamevalidation" class="form-label"></label> Username </label>
-              <input type="username" class="form-control" id="usernamevalidation" placeholder="Enter username" required>
-              <div class="valid-feedback"></div>
-              <div class="invalid-feedback">Please enter username.</div>
-            </div>
-            <br>
-            <div class="col">
-              <label for="passwordvalidation" class="form-label"></label> Password </label>
-              <input type="password" class="form-control" id="passwordvalidation" placeholder="Enter password" required>
-              <div class="valid-feedback"></div>
-              <div class="invalid-feedback">Please enter password.</div>
-            </div>
-            <br>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> Remember Me</label>
-            </div>
-            <br>
-            <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-warning"> Sign in </button>
-            </div>
-            <span id="forgetpass" class="justify-content-md-center"><a href="forgetpass.html">Forget Password?</a></span>
-          </form>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <label>Don't have an account? <a href="signup.html" style="text-decoration: none;"><b>Sign Up</b></a></label>
-      </div>
-    </div>
-  </div>
-</div>
   
   <!--Navigation Bar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -182,8 +130,8 @@
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Hot Deals!</a></li>
           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="riostore.html">Rio's Home Renovation</a></li>
-              <li><a class="dropdown-item" href="geestore.html">Gee's Construction Supplies</a></li>
+              <li><a class="dropdown-item" href="FHACS.html">Fuents Hardware And Construction Supplies</a></li>
+              <li><a class="dropdown-item" href="PTLHSAGM.html">PTL Housing Supply And General Merchandise</a></li>
               <!--<li><a class="dropdown-item" href="#">Store 3</a></li>
               <li><a class="dropdown-item" href="#">Store 4</a></li>
               <li><a class="dropdown-item" href="#">Store 5</a></li>-->
@@ -259,6 +207,17 @@
           </li>
           <li class="nav-item"><a class="nav-link" href="maps.html">Near Me</a></li> 
         </ul>
+
+        <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="myaccount.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Account</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="accountsettings.html">Settings</a></li>
+                <li><a class="dropdown-item" href="cart.html">My Cart</a></li>
+                <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+              </ul>
+              </li>
+          </div>
 
       </div>
     </div>
