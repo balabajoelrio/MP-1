@@ -13,9 +13,17 @@
     <script type="module" src="./index.js"></script>
     <title>SpeedBuild PH Near Me</title>
     <style>
+      .modal-footer {
+        justify-content: center;
+      }
+
       #logo{
         margin: 0;
         height: 40px;
+      }
+
+      .signup {
+        text-decoration: none;
       }
 
       .gradiant {
@@ -65,7 +73,13 @@
     <div class="d-flex">
       <div class="me-auto p-2" type="button"> <a href="merchantsignin.html" style="text-decoration: none; color:rgb(255, 183, 0);">Merchant Center</a></div>
       <div class="d-flex align-items-end">
+      <div>
+        <button type="button" class="btn btn-border-0 text-warning" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+      </div>
 
+      <div>
+        <button type="button" class="btn btn-border-0 text-warning"><a href="signup.html" class="signup text-warning"> Sign Up </a></button>
+      </div>
     </div>
     </div>
 
@@ -74,6 +88,98 @@
 
   </div>
 
+  <!--Sign In-->
+  <div class="modal" id="login" tabindex="-1" aria-labelledby="loginmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary text-warning">
+          <h1 class="modal-title fs-5" id="login">SpeedBuild PH</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Login</h3>
+            <br>
+            <form class="needs-validation" novalidate action="myaccount.html">
+              <div class="col">
+                <label for="usernamevalidation" class="form-label"></label> Username </label>
+                <input type="username" class="form-control" id="usernamevalidation" placeholder="Enter username" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please enter username.</div>
+              </div>
+              <br>
+              <div class="col">
+                <label for="passwordvalidation" class="form-label"></label> Password </label>
+                <input type="password" class="form-control" id="passwordvalidation" placeholder="Enter password" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please enter password.</div>
+              </div>
+              <br>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> Remember Me</label>
+              </div>
+              <br>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-warning"> Sign in </button>
+              </div>
+              <span id="forgetpass" class="justify-content-md-center"><a href="forgetpass.html">Forget Password?</a></span>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <label>Don't have an account? <a href="signup.html" style="text-decoration: none;"><b>Sign Up</b></a></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!--Sign In through cart-->
+ <div class="modal" id="cartlogin" tabindex="-1" aria-labelledby="cartloginmodal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-secondary text-warning">
+        <h1 class="modal-title fs-5" id="cartlogin">SpeedBuild PH</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <h3>Login</h3>
+          <br>
+          <form class="needs-validation" novalidate action="cart.html">
+            <div class="col">
+              <label for="usernamevalidation" class="form-label"></label> Username </label>
+              <input type="username" class="form-control" id="usernamevalidation" placeholder="Enter username" required>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter username.</div>
+            </div>
+            <br>
+            <div class="col">
+              <label for="passwordvalidation" class="form-label"></label> Password </label>
+              <input type="password" class="form-control" id="passwordvalidation" placeholder="Enter password" required>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter password.</div>
+            </div>
+            <br>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> Remember Me</label>
+            </div>
+            <br>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-warning"> Sign in </button>
+            </div>
+            <span id="forgetpass" class="justify-content-md-center"><a href="forgetpass.html">Forget Password?</a></span>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <label>Don't have an account? <a href="signup.html" style="text-decoration: none;"><b>Sign Up</b></a></label>
+      </div>
+    </div>
+  </div>
+</div>
+  
   <!--Navigation Bar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -87,14 +193,17 @@
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Hot Deals!</a></li>
           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Store 1</a></li>
-              <li><a class="dropdown-item" href="#">Store 2</a></li>
-              <li><a class="dropdown-item" href="#">Store 3</a></li>
+              <li><a class="dropdown-item" href="riostore.html">Rio's Home Renovation</a></li>
+              <li><a class="dropdown-item" href="geestore.html">Gee's Construction Supplies</a></li>
+              <!--<li><a class="dropdown-item" href="#">Store 3</a></li>
               <li><a class="dropdown-item" href="#">Store 4</a></li>
-              <li><a class="dropdown-item" href="#">Store 5</a></li>
+              <li><a class="dropdown-item" href="#">Store 5</a></li>-->
+              <hr>
+              <li><a class="dropdown-item" href="merchantsignup.html">Add your store</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Air conditioning</a></li>
               <li><a class="dropdown-item" href="#">Appropriate technology</a></li>
@@ -102,7 +211,7 @@
               <li><a class="dropdown-item" href="#">Ceilings</a></li>
               <li><a class="dropdown-item" href="#">Composite materials</a></li>
               <li><a class="dropdown-item" href="#">Concrete</a></li>
-              <li><a class="dropdown-item" href="#">Doors</a></li>
+              <!--<li><a class="dropdown-item" href="#">Doors</a></li>
               <li><a class="dropdown-item" href="#">Door furniture</a></li>
               <li><a class="dropdown-item" href="#">Electrical systems</a></li>
               <li><a class="dropdown-item" href="#">Fire suppression</a></li>
@@ -126,7 +235,7 @@
               <li><a class="dropdown-item" href="#">Wood</a></li>
               <li><a class="dropdown-item" href="#">Wood finishing materials</a></li>
               <li><a class="dropdown-item" href="#">Wood working</a></li>
-              <li><a class="dropdown-item" href="#">Windows</a></li>
+              <li><a class="dropdown-item" href="#">Windows</a></li>-->
                     
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">List of Woods</a></li>
@@ -139,7 +248,7 @@
               <li><a class="dropdown-item" href="#">Backhoe</a></li>
               <li><a class="dropdown-item" href="#">Backhoe Loader</a></li>
               <li><a class="dropdown-item" href="#">Boom Truck</a></li>
-              <li><a class="dropdown-item" href="#">Crane</a></li>
+              <!--<li><a class="dropdown-item" href="#">Crane</a></li>
               <li><a class="dropdown-item" href="#">Excavator</a></li>
               <li><a class="dropdown-item" href="#">Forklift</a></li>
               <li><a class="dropdown-item" href="#">Generator</a></li>
@@ -156,23 +265,11 @@
               <li><a class="dropdown-item" href="#">Welding Machine</a></li>
               <li><a class="dropdown-item" href="#">Wheel Loader</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Inquire</a></li>
+              <li><a class="dropdown-item" href="#">Inquire</a></li>-->
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="maps.html">Near Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="maps.html">Near Me</a></li> 
         </ul>
-
-        <div>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="myaccount.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Account</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="accountsettings.html">Settings</a></li>
-              <li><a class="dropdown-item" href="cart.html">My Wishlist</a></li>
-              <li><a class="dropdown-item" href="cart.html">My Cart</a></li>
-              <li><a class="dropdown-item" href="index.html">Sign out</a></li>
-            </ul>
-            </li>
-        </div>
 
       </div>
     </div>
@@ -248,8 +345,84 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 }
 
 window.initMap = initMap;
+
+
 </script>
 
+<!--Footer-->
+<footer class="bg-secondary p-3 mb-0 bottom-0" style="color: white;">
+  <div class="row">
+  <div class="col">
+    <p class=""> <b>Customer Care</b></p>
+    <p class="lh-1">Contact Us</p>
+    <p class="lh-1">FAQs</p>
+    <p class="lh-1">Return and Exchanges</p>
+    <p class="lh-1">Shipping and Handling</p>
+    <p class="lh-1">Damage and Defected items</p>
+    <p class="lh-1">Cancelling or Changing an Order</p>
+    <p class="lh-1">Terms of Services</p>
+    <p class="lh-1">Privacy Policy</p>
+  </div>
+  <div class="col">
+    <p ><b>Inside</b></p>
+    <p class="lh-1"><b>SpeedBuild PH</b></p>
+    <p class="lh-1">About Us</p>
+    <p class="lh-1">Why SpeedBuild PH</p>
+    <p class="lh-1">Careers</p>
+  </div>
+  <div class="col">
+    <p><b>Other</b></p>
+    <p class="lh-1">Rentals</p>
+    <p class="lh-1">Be a Merchant</p>
+
+    <br>
+
+    <div>    
+    <p><b>Newsletter:</b> Sign up and get 10% off of your next order</p>
+    <div>
+    <input type="email" class="form-control" placeholder="Email address">
+    </div>
+    <div class="pt-1">
+    <button class="btn btn-warning">Subscribe</button>
+    </div>
+    <br>
+    <div class="d-flex">
+      <a href="https://www.facebook.com/" style="text-decoration: none; color: white;"><i class="bi bi-facebook p-2"></i></a>
+      <a href="https://www.instagram.com/" style="text-decoration: none; color: white;"><i class="bi bi-instagram p-2"></i></a>
+      <a href="https://twitter.com/" style="text-decoration: none; color: white;"> <i class="bi bi-twitter p-2"></i></a>
+      <a href="https://www.youtube.com/" style="text-decoration: none; color: white;"> <i class="bi bi-youtube p-2"></i></a> 
+    </div>
+    </div>
+  </div>
+  </div> 
+  <hr>
+  <div class="text-center">
+  <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
+  <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
+  </div>
+</footer>
+
+<!--Validation Script-->
+<script>
+  (function () {
+  'use strict'
+  
+  
+  var forms = document.querySelectorAll('.needs-validation')
+  
+  Array.prototype.slice.call(forms)
+  .forEach(function (form) {
+  form.addEventListener('submit', function (event) {
+  if (!form.checkValidity()) {
+  event.preventDefault()
+  event.stopPropagation()
+  }
+
+form.classList.add('was-validated')
+}, false)
+})
+})()
+</script>
 
 
     
