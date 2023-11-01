@@ -13,10 +13,6 @@
     <script type="module" src="./index.js"></script>
     <title>SpeedBuild PH Near Me</title>
     <style>
-         .modal-footer {
-        justify-content: center;
-      }
-
       #logo{
         margin: 0;
         height: 40px;
@@ -32,34 +28,32 @@
         background-color: #f6e8b3;
       }
 
-      #map{
+      #map {
         height: 100%;
       }
 
       html,body {
         height: 100%;
-        margin: 0%;
-        padding: 0%;
+        margin: 0;
+        padding: 2;
       }
-
+      
       .custom-map-control-button {
         background-color: #fff;
         border: 0;
         border-radius: 2px;
-        box-shadow: 0 1px 4px -1px rgba(0,0,0,0.3);
+        box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
         margin: 10px;
         padding: 0 0.5em;
         font: 400 18px Roboto, Arial, sans-serif;
         overflow: hidden;
         height: 40px;
         cursor: pointer;
-
       }
-
+      
       .custom-map-control-button:hover {
         background: rgb(235, 235, 235);
       }
-      
 
     </style>
 </head>
@@ -184,20 +178,26 @@
     </div>
   </nav>
 
-    <div id="map"> </div>
-    
+  <div id="map"></div>
             
-    <footer class="bg-secondary p-3 mb-0 bottom-0" style="color: white;">
-        <div class="text-center">
-            <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
-            <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
-        </div>
-    </footer>
+  <footer class="bg-secondary p-3 mb-0 bottom-0" style="color: white;">
+    <div class="text-center">
+      <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
+      <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
+    </div>
+  </footer>
 
-   
-    
-    <script>
-        let map, infoWindow;
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  defer>
+  </script>
+
+<script>
+// Note: This example requires that you consent to location sharing when
+// prompted by your browser. If you see the error "The Geolocation service
+// failed.", it means you probably did not give permission for the browser to
+// locate you.
+let map, infoWindow;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -248,8 +248,9 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 }
 
 window.initMap = initMap;
-        
-    </script>
+</script>
+
+
 
     
 </body>
