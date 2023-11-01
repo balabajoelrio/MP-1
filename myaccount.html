@@ -61,7 +61,7 @@
 
     </style>
 </head>
-<body>
+<body class="bg-dark-subtle">
 
   <!--Header-->
   <div class="gradiant">
@@ -184,7 +184,13 @@
 
   <!--Search Bar & Cart-->
   <div class="container p-3">
-    <a href="cart2.html"><i class="bi bi-cart4" style="font-size: 2rem;" id="cart"></i></a>
+
+    <a href="cart2.html"><i class="bi bi-cart4" style="font-size: 2rem;" id="cart" data-bs-toggle="modal" data-bs-target="#cartlogin">
+      <span class="position-absolute translate-middle badge rounded-pill bg-danger fs-6">
+        1
+      </span>
+    </i></a>
+    
     <div class="w-50 shadow" id="searchgroup">
       <div class="input-group">
         <input type="search" class="form-control" placeholder="Search materials" id="search">
