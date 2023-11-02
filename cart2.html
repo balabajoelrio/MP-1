@@ -223,9 +223,9 @@
                 <label class="fw-bold">Hammer</label>
                 <p>Hammer with wooden handle</p>
                 <div class="input-group p-1">
-                  <button type="button" class="btn bg-danger text-light">-</button>
-                  <input type="number" class="form-control text-center" placeholder="1">
-                  <button type="button" class="btn bg-danger text-light">+</button>
+                  <button type="button" class="btn bg-danger text-light fw-bold">-</button>
+                  <input type="number" class="form-control text-center" value="1">
+                  <button type="button" class="btn bg-danger text-light fw-bold">+</button>
                 </div>
                 <div>
                   <label>Available sizes</label>
@@ -245,14 +245,18 @@
               </div>
               <div>
                 <div class="d-flex p-1">
-                  <label class="fs-5 p-1"> Price </label>
-                  <label class="fs-5 fw-medium p-1"> Php 250 </label>
+                  <label class="p-1"> Price </label>
+                  <label class=" fw-medium p-1"> Php 250 </label>
                 </div>
                 <hr>
                 <div class="d-flex flex-grow-1">
-                  <label class="p-1 fw-medium"> Item Total:</label>
-                  <input class="fw-bold border rounded-2 text-center" value="Php 250" >
-                  <div class="ms-auto p-1">
+                  <div class="p-2">
+                  <label class="form-check-label"> Item Total:</label>
+                  </div>
+                  <div class="p-2 border border-dark rounded-3">
+                  <label class="form-check-label fw-bold"> Php 250.00</label>
+                  </div>
+                  <div class="ms-auto">
                     <button type="submit" class="form-control btn btn-warning fw-bold shadow">Add to Order</button>
                   </div>
                 </div>
