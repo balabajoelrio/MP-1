@@ -36,10 +36,6 @@
       background-color: rgb(36, 35, 35); 
       background-image: linear-gradient(rgb(36, 35, 35), rgb(93, 92, 92));
     }
-      
-    li a:hover {
-      background-color: #f6e8b3;
-    }
 
     .carousel-item {
       object-fit: cover;
@@ -49,6 +45,107 @@
     .carousel-inner img {
       margin: auto;
     }
+
+    .footer {
+        padding: 50px 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: rgb(90, 89, 89)
+        
+      }
+
+      #footer-container {
+        max-width: 1170px;
+
+        margin: auto;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .footer-col {
+        width: 25%;
+        padding: 0 15px;
+
+      }
+
+      .footer-row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .footer-col h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500px;
+        position: relative;
+      }
+      
+      .footer-col h4::before {
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #d5c003;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+      }
+
+      .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+      }
+
+      .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+      }
+
+      .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background: rgba(255,255,255,0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+      }
+
+      .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+      }
+
+      @media(max-width:767px){
+        .footer-col{
+          width: 50%;
+          margin-bottom: 30px;
+        }
+      }
+
+      @media(max-width:574px){
+        .footer-col{
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
   </style>
 </head>
 <body class="bg-dark-subtle">
@@ -556,66 +653,77 @@
   <br>
 
   <!--Footer-->
-  <footer class="bg-secondary p-3 mb-0 bottom-0" style="color: white;">
-    <div class="row">
-      <div class="col">
-        <p class=""> <b>Customer Care</b></p>
-        <p class="lh-1">Contact Us</p>
-        <p class="lh-1">FAQs</p>
-        <p class="lh-1">Return and Exchanges</p>
-        <p class="lh-1">Shipping and Handling</p>
-        <p class="lh-1">Damage and Defected items</p>
-        <p class="lh-1">Cancelling or Changing an Order</p>
-        <p class="lh-1">Terms of Services</p>
-        <p class="lh-1">Privacy Policy</p>
-      </div>
-      
-      <div class="col">
-        <p ><b>Inside</b></p>
-        <p class="lh-1"><b>SpeedBuild PH</b></p>
-        <p class="lh-1">About Us</p>
-        <p class="lh-1">Why SpeedBuild PH</p>
-        <p class="lh-1">Careers</p>
-      </div>
-      
-      <div class="col">
-        <p><b>Other</b></p>
-        <p class="lh-1">Rentals</p>
-        <p class="lh-1">Be a Merchant</p>
-        <br>
-        
-        <div>
-          <p><b>Newsletter:</b> Sign up and get 10% off of your next order</p>
-          <div>
-            <input type="email" class="form-control" placeholder="Email address">
-          </div>
-          
-          <div class="pt-1">
-            <button class="btn btn-warning">Subscribe</button>
-          </div>
-      
-          <br>
-    
-          <div class="d-flex">
+  <footer class="footer">
+    <div class="container" id="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+  
+        </div>
+  
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Payment Options</a></li>
+          </ul>
+  
+        </div>
+  
+        <div class="footer-col">
+          <h4>Online Store</h4>
+          <ul>
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+            <li><a href="#">Category 4</a></li>
+          </ul>
+  
+        </div>
+  
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
             <a href="https://www.facebook.com/" style="text-decoration: none; color: white;"><i class="bi bi-facebook p-2"></i></a>
             <a href="https://www.instagram.com/" style="text-decoration: none; color: white;"><i class="bi bi-instagram p-2"></i></a>
             <a href="https://twitter.com/" style="text-decoration: none; color: white;"> <i class="bi bi-twitter p-2"></i></a>
             <a href="https://www.youtube.com/" style="text-decoration: none; color: white;"> <i class="bi bi-youtube p-2"></i></a> 
           </div>
+  
+          <br>
+  
+          <div class="input-group">
+            <p class="text-light"><b class="text-warning">Newsletter:</b> Sign up and get 10% off of your next order</p>
+            <div class="p-1">
+            <input type="email" class="form-control" placeholder="Email address">
+            </div>
+            <div class="p-1">
+              <button class="btn btn-warning">Subscribe</button>
+            </div>
+          </div>
+  
         </div>
+  
       </div>
-    </div> 
-    
-    <hr>
-
   
-    <div class="text-center">
+      <hr>
   
+      <div class="text-center pb-0 text-light">
       <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
       <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
+      </div>
   
     </div>
-
+  
   </footer>
 
   <!--Validation Script-->
