@@ -74,13 +74,15 @@
 
       <br>
       <br>
-      <label>Phone Number</label> <i class="bi bi-info-circle" style="color: red;" id="phoneinfo"></i>
+
+         
+      <label>Phone Number</label> <i class="bi bi-info-circle" role="button" style="color: red;" id="phoneinfo" data-bs-toggle="popover" data-bs-content="We will contact you through this phone number."></i>
       <div class="d-flex">      
       <input type="text" class="form-control" id="phone" value="+63 9493256898">
       <button type="button" class="btn btn-border-0">Edit</button>
       </div>
       <br>
-      <label>Email Address</label> <i class="bi bi-info-circle" style="color: red;" id="emailinfo"></i>
+      <label>Email Address</label> <i class="bi bi-info-circle" style="color: red;" id="emailinfo" data-bs-toggle="popover" data-bs-content="All email communications will be sent to this email address."></i>
       <div class="d-flex">      
       <input type="email" class="form-control" id="email" value="balabajoelrio@gmail.com">
       <button type="button" class="btn btn-border-0">Edit</button>
@@ -153,6 +155,13 @@
     <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+    </script>
     
 </body>
 </html>
