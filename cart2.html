@@ -340,6 +340,8 @@
 
             <div class="container text-center p-2">
 
+              <!--Cash Payment-->
+
               <div >
                 <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#cod" aria-controls="cod">COD</button> 
                 <div class="collapse" id="cod">
@@ -357,38 +359,54 @@
               
               <br>
               
+              <!--Card Payment-->
               <div>
                 <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#CardPayment" aria-controls="CardPayment">Credit Card</button>
                 <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#CardPayment" aria-controls="CardPayment">Debit Card</button>
-                  <div class="collapse" id="CardPayment">
-                    <div class="card card-body">
-                      <label type="label" class="form-label" for="CardPayment">Enter name on the card</label>
-                      <input type="name" class="form-control" placeholder="Card Holder name" id="CardPayment" required>
-                      <br>
-                      <label type="label" class="form-label" for="cardnumber">Enter card number</label>
-                      <input type="text" class="form-control" placeholder="---- ---- ---- ----" id="Credit" required>
-                      <div class="d-flex">
-                        <div class="p-1">
-                          <label>Validity</label>
-                          <input type="text" class="form-control" placeholder="--/--" id="validity" required>
-                        </div>
-                        <div class="ms-auto p-1">
-                          <label>CVV</label>
-                          <input type="text" class="form-control" placeholder="***" id="CVV" required>
-                        </div>
+                  
+                <div class="collapse" id="CardPayment">
+                  <div class="card card-body border-danger-subtle">
+                    <label type="label" for="CardPayment">Enter name on the card</label>
+                    <input type="name" class="form-control" placeholder="Card Holder name" id="CardPayment" required>
+                    <br>
+                    <label type="label" for="cardnumber">Enter card number</label>
+                    <input type="text" class="form-control" placeholder="---- ---- ---- ----" id="Credit" required>
+                    <br>
+                    <div class="d-flex">
+                      <div class="p-1">
+                        <label>Validity</label>
+                        <input type="text" class="form-control" placeholder="--/--" id="validity" required>
+                      </div>
+                      
+                      <div class="ms-auto p-1">
+                        <label>CVV</label>
+                        <input type="text" class="form-control" placeholder="***" id="CVV" required>
                       </div>
                     </div>
+                    <br>
+                    <div class="d-flex">
+                      <div class="p-1">
+                        <button type="button" class="btn btn-primary shadow">Authorize</button>
+                      </div>
+                      <div class="ms-auto p-1">
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                      </div>
+
+                    </div>
                   </div>
+                </div>
               </div>
               
               <br>
+
+              <!--Online Wallet-->
 
               <div>
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#GCash" aria-controls="GCash">GCash</button> 
                 <div class="collapse" id="GCash">
                   <div class="card card-body">
                     <label>Scan QR Code:</label>
-                    <img src="Gcash.jpg" alt="QR">
+                    <img src="Gcash.jpg" alt="QR" style="width: 150px; height: 250px; padding: auto; margin: auto;">
                   </div>
                 </div>
 
@@ -396,7 +414,7 @@
                 <div class="collapse" id="PayMaya">
                   <div class="card card-body">
                     <label>Scan QR Code:</label>
-                    <img src="maya.jpg" alt="QR">
+                    <img src="maya.jpg" alt="QR" style="width: 150px; height: 200px; padding: auto; margin: auto;">
                   </div>
                 </div>
               </div>
