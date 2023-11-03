@@ -13,6 +13,17 @@
             background-image: linear-gradient(darkgray, rgb(93, 92, 92));
         }
 
+        .custom-class {
+            display: none;
+        }
+        
+
+        @include media-breakpoint-up(sm) {
+            .custom-class {
+                display: block;
+            }
+        }
+
         
     </style>
     
