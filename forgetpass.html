@@ -134,7 +134,7 @@
 
     <button class="open-button" onclick="openForm()">Chat</button>
 
-<div class="chat-popup" id="myForm">
+    <div class="chat-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
     <h1>Chat</h1>
 
@@ -144,16 +144,13 @@
     <button type="submit" class="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
-</div>
-
+    </div>
     
     <!--Validation Script-->
-  <script>
+    <script>
     (function () {
-    'use strict'
-    
-    
-    var forms = document.querySelectorAll('.needs-validation')
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
     
     Array.prototype.slice.call(forms)
     .forEach(function (form) {
@@ -181,9 +178,7 @@
         document.getElementById("myForm").style.display = "none";
     }
 
-  </script>
+    </script>
 
-
-    
 </body>
 </html>

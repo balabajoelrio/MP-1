@@ -23,82 +23,97 @@
 </head>
 <body>
 
-    <!--Sign Up-->
-    <div class="container-fluid bg-secondary p-2">
-        <h1><a href="index.html" style="text-decoration: none; color:rgb(212, 167, 4)">SpeedBuild PH</a></h1>
+  <!--Sign Up-->
+  <div class="container-fluid bg-secondary p-2">
+    <h1><a href="index.html" style="text-decoration: none; color:rgb(212, 167, 4)">SpeedBuild PH</a></h1>
+  </div>
+
+  <!--Content & Form-->
+  <div class="row p-5">
+    <div class="col-6 flex">
+      <img src="9.1.png" alt="logo" id="logo" style="width: 200; height: 200; margin: auto; padding: auto;">
     </div>
-    
-    <div class="row p-5">
-        <div class="col-6 flex">
-            <img src="9.1.png" alt="logo" id="logo" style="width: 200; height: 200; margin: auto; padding: auto;">
 
-        </div>
+    <div class="col">
+      <div class="form-control shadow">
+        <h3 class="p-3 pb-0">Sign up</h3>
+        <br>
 
-        <div class="col">
-            <div class="form-control shadow">
-                <h3 class="p-3 pb-0">Sign up</h3>
-                <br>
-                <form class="needs-validation p-3" novalidate action="verifyaccount.html">
-                    <div class="col">
+        <form class="needs-validation p-3" novalidate action="verifyaccount.html">
+          <div class="col">
                         <label for="fnamevalidation" class="form-label"></label> First Name </label>
                         <input type="text" class="form-control" id="fnamevalidation" placeholder="Enter first name" required>
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback">Please enter first name.</div>
-                    </div>
-                      <br>
-                    <div class="col">
+          </div>
+          
+          <br>
+          
+          <div class="col">
                         <label for="lnamevalidation" class="form-label"></label> Last Name </label>
                         <input type="text" class="form-control" id="lnamevalidation" placeholder="Enter last name" required>
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback">Please enter last name.</div>
-                    </div>
-                    <br>
-                    <div class="col">
-                        <label for="phonevalidation" class="form-label"></label> Phone Number </label>
-                        <input type="phonenumber" class="form-control" id="phonevalidation" placeholder="Enter phone number" required>
-                        <div class="valid-feedback"></div>
-                        <div class="invalid-feedback">Please enter valid phone number.</div>
-                    </div>
-                    <br>
-                    <div class="col">
+          </div>
+          
+          <br>
+          
+          <div class="col">          
+            <label for="phonevalidation" class="form-label"></label> Phone Number </label>          
+            <input type="phonenumber" class="form-control" id="phonevalidation" placeholder="Enter phone number" required>          
+            <div class="valid-feedback"></div>          
+            <div class="invalid-feedback">Please enter valid phone number.</div>          
+          </div>
+          
+          <br>
+
+          <div class="col">
                         <label for="emailvalidation" class="form-label"></label> Email Address </label>
                         <input type="email" class="form-control" id="emailvalidation" placeholder="Enter email address" required>
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback">Please enter valid email address.</div>
-                    </div>
-                    <br>
-                    <p style="text-align: center;" class="fw-lighter">----------------- OR -----------------</p>
-                    <p>Connect Account:</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button type="submit" class="btn btn-primary" action="#">facebook</button>
-                        <button type="submit" class="btn btn-danger" action="#">Gmail</button>
-                    </div>
-                    <br>
-                    <hr>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> By signing up, you agree to SpeedBuild PH's <a href="#"> Terms of Services</a> & <a href="#">Privacy Policy</a></label>
-                    </div>
-                    <br>
-                    <div class="d-grid p-2">
-                        <button type="submit" class="btn btn-warning"> Next</button>
-                    </div>
+          </div>
+          
+          <br>
+          
+          <p style="text-align: center;" class="fw-lighter">----------------- OR -----------------</p>
+          <p>Connect Account:</p>
+          
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">         
+            <button type="submit" class="btn btn-primary" action="#">facebook</button>  
+            <button type="submit" class="btn btn-danger" action="#">Gmail</button>
+          </div>
+          
+          <br>
+          
+          <hr>
+          
+          <div class="form-check">
+          
+            <label class="form-check-label">          
+              <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> By signing up, you agree to SpeedBuild PH's <a href="#"> Terms of Services</a> & <a href="#">Privacy Policy</a></label>          
+          </div>
+          
+          <br>
+          
+          <div class="d-grid p-2">
+              <button type="submit" class="btn btn-warning"> Next</button>          
+          </div>
+            
+          <div class="text-center p-2">            
+              <label> Already have an account? 
+                <button type="button" class="btn btn-border-0 text-primary" data-bs-toggle="modal" data-bs-target="#login"><b>Sign In</b>
+                </button>            
+              </label>            
+          </div>
+              
+        </form>
+          
+      </div>
+    </div>                
+  </div>
 
-                    <div class="text-center p-2">
-                        <label> Already have an account? <button type="button" class="btn btn-border-0 text-primary" data-bs-toggle="modal" data-bs-target="#login"><b>Sign In</b></button>
-                        </label>
-                    </div>
-
-                    <div>
-                        
-                      </div>
-                </form>
-            </div>
-        </div>
-                
-    </div>
-
-     <!--Sign In-->
+  <!--Sign In-->
   <div class="modal" id="login" tabindex="-1" aria-labelledby="loginmodal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -144,17 +159,15 @@
     </div>
   </div>
 
-
   <br><br><br><br><br>
 
   <!--Footer-->
-<footer class="bg-secondary p-3 mb-0 bottom-0" style="color: white;">
-  </div> 
-  <div class="text-center">
-  <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
-  <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
-  </div>
-</footer>
+  <footer class="bg-secondary p-3 mb-0 bottom-0" style="color: white;">
+    <div class="text-center">
+      <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
+      <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
+    </div>
+  </footer>
 
   <!--Validation Script-->
   <script>
@@ -172,13 +185,11 @@
     event.stopPropagation()
     }
 
-  form.classList.add('was-validated')
-  }, false)
-  })
-  })()
+    form.classList.add('was-validated')
+    }, false)
+    })
+    })()
   </script>
 
-    
-    
 </body>
 </html>

@@ -35,6 +35,7 @@
         <h1><a href="myaccount.html" style="text-decoration: none; color:black">SpeedBuild PH</a></h1>
     </div>
     
+    <!--Content & Form-->
     <div class="row p-5" id="background">
         <div class="col-7 d-flex">
             <img src="5.1.png" alt="logo" style="width: 200; height: 200; margin: auto; padding: auto;">
@@ -89,37 +90,34 @@
     </div>
 
     <!--Footer-->
-  <footer class="bg-secondary p-3 mb-0 bottom-0" style="color: white;">
-    </div> 
-    <div class="text-center">
-    <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
-    <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer class="bg-secondary p-3 mb-0 bottom-0" style="color: white;">
+        <div class="text-center">
+            <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
+            <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
+        </div>
+    </footer>
 
   <!--Validation Script-->
-  <script>
-    (function () {
-    'use strict'
+    <script>
+        (function () {
+        'use strict'
     
     
-    var forms = document.querySelectorAll('.needs-validation')
+        var forms = document.querySelectorAll('.needs-validation')
     
-    Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-    if (!form.checkValidity()) {
-    event.preventDefault()
-    event.stopPropagation()
-    }
+        Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+        }
 
-  form.classList.add('was-validated')
-  }, false)
-  })
-  })()
-  </script>
-
-    
+        form.classList.add('was-validated')
+        }, false)
+        })
+        })()
+    </script>
     
 </body>
 </html>
