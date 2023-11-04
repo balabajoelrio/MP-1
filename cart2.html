@@ -146,6 +146,8 @@
           margin-bottom: 30px;
         }
       }
+
+      
   </style>
 </head>
 <body class="bg-dark-subtle">
@@ -302,7 +304,6 @@
             <hr>
             <div class="row">
               <div class="col">
-
                 <div class="card text-center m-1 shadow" style="width: 12rem;">
                   <img src="prod1.png" class="object-fit-lg-contain" alt="..."> 
                   <div class="card-body">
@@ -311,8 +312,8 @@
                     <p class="card-text bg-dark text-light p-2"> <b>Php. 250.00</b></p>
                   </div>
                 </div>
-
               </div>
+
               <div class="col">
                 <label class="fw-bold">Hammer</label>
                 <p>Hammer with wooden handle</p>
@@ -321,36 +322,44 @@
                   <input type="number" class="form-control text-center" value="1">
                   <button type="button" class="btn bg-danger text-light fw-bold">+</button>
                 </div>
+
                 <div>
                   <label>Available sizes</label>
                 </div>
+
                 <div class="input-group">
+
                   <div class="p-1">
                     <button type="submit" class="btn btn-danger">14 In</button>
                   </div>
+
                   <div class="p-1">
                     <button type="submit" class="btn btn-danger">16 In</button>
                     
                   </div>
+
                   <div class="p-1">
                     <button type="submit" class="btn btn-danger"+>18 In</button>
                   </div>
+
                 </div>
               </div>
+
               <div>
                 <hr>
                 <div class="d-flex flex-grow-1">
                   <div class="p-2">
-                  <label class="form-check-label"> Item Total:</label>
+                    <label class="form-check-label"> Item Total:</label>
                   </div>
+
                   <div class="p-2 border border-dark rounded-3">
-                  <label class="form-check-label fw-bold"> Php 250.00</label>
+                    <label class="form-check-label fw-bold"> Php 250.00</label>
                   </div>
+
                   <div class="ms-auto">
                     <a href="" class="btn btn-warning">Add to Order</a>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -368,33 +377,35 @@
                     <div class="p-2">Item</div>
                     <div class="ms-auto p-2">Amount</div>
                   </div>
-                <div class="d-flex">
-                  <div class="p-2">1</div>
-                  <div class="p-2">Hammer</div>
-                  <div class="ms-auto p-2">Php 250.00</div>
-                </div>
+  
+                  <div class="d-flex">
+                    <div class="p-2">1</div>
+                    <div class="p-2">Hammer</div>
+                    <div class="ms-auto p-2">Php 250.00</div>
+                  </div>
 
-                <br><br><br><br><br>
-                <hr>
+                  <br><br><br><br><br>
+                  <hr>
 
-                <div class="d-flex pt-0 p-2">
-                  <div>Subtotal</div>
-                  <div class="ms-auto">Php 250.00</div>
-                </div>
-                <div class="d-flex p-2">
-                  <div >Taxes and Fees</div>
-                  <div class="ms-auto">Php 2.50</div>
-                </div>
+                  <div class="d-flex pt-0 p-2">
+                    <div>Subtotal</div>
+                    <div class="ms-auto">Php 250.00</div>
+                  </div>
 
-                <div class="d-flex p-2 fs-5 fw-bold">
-                  <div>Order Total</div>
-                  <div class="ms-auto">Php 252.50</div>
-                </div>
-                </div>
+                  <div class="d-flex p-2">
+                    <div >Taxes and Fees</div>
+                    <div class="ms-auto">Php 2.50</div>
+                  </div>
 
+                  <div class="d-flex p-2 fs-5 fw-bold">
+                    <div>Order Total</div>
+                    <div class="ms-auto">Php 252.50</div>
+                  </div>
+                </div>
               </div>
 
               <br>
+
               <!--Order Type-->
               <h4 class="bg bg-secondary-subtle p-2">Order Type</h4>                
               <div class="form-check">
@@ -403,17 +414,21 @@
                   Pick up
                 </label>                  
               </div>
+
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Deliver
                 </label>
               </div>
+
               <br>
+
               <div>
                 <label for="date" class="form-label">Select preferred date and time</label>
                 <input type="datetime-local" class="form-control" id="date">
               </div>
+
               <br>
 
               <div>
@@ -431,14 +446,13 @@
               </div>
               
               <br>
-                
           
             </form>
 
+            <!--Payment Method-->
             <div class="container text-center p-2">
 
               <!--Cash Payment-->
-
               <div >
                 <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#cod" aria-controls="cod">COD</button> 
                 <div class="collapse" id="cod">
@@ -497,7 +511,6 @@
               <br>
 
               <!--Online Wallet-->
-
               <div>
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#GCash" aria-controls="GCash">GCash</button> 
                 <div class="collapse" id="GCash">
@@ -517,138 +530,151 @@
               </div>
             </div>
 
-              
+            <hr>
 
-              <hr>
-
-              <div class="d-flex">
-                <div class="mt-2 text-end">
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#checkoutbtn">Checkout</button>
-                </div>
-                <div class="ms-auto mt-2 text-end">
-                  <button type="button" class="btn btn-secondary fw-bold shadow" id="cancel" href="myaccount.html">Cancel</button>
-                </div>
+            <!--Checkout-->
+            <div class="d-flex">
+              <div class="mt-2 text-end">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#checkoutbtn">Checkout</button>
               </div>
+              
+              <div class="ms-auto mt-2 text-end">
+                <button type="button" class="btn btn-secondary fw-bold shadow" id="cancel" href="myaccount.html">Cancel</button>
+              </div>
+            </div>
 
+            <!--print visible page-->
+            <style>
+              @media print {
+                body * {
+                  visibility: hidden;
+                }
+
+                #print-container, #print-container * {
+                  visibility: visible;
+                }
+              }
+
+            </style>
 
             <!-- Modal -->
             <div class="modal fade" id="checkoutbtn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="#checkoutbtn" aria-hidden="true">
               <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content" id="print-container">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Order Details</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Order Details</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
 
+                  <!--Modal Content-->
                   <div class="modal-body">
-                    <div>
-                      <div class="d-flex">
-                        <h3>Tracking Number:</h3>
-                        <h3 class="text-danger ms-auto">F123456789</h3>
-                      </div>
+                  <div>
+                    <div class="d-flex">
+                      <h3>Tracking Number:</h3>
+                      <h3 class="text-danger ms-auto">F123456789</h3>
+                    </div>
           
-                      <form>
-                        <div class="border border-2 border-dark">
-                          <div class="m-4">
-                            <div class="d-flex">
-                              <div class="p-2">Qty</div>
-                              <div class="p-2">Item</div>
-                              <div class="ms-auto p-2">Amount</div>
-                            </div>
+                    <form class="form">
+                      <div class="border border-2 border-dark">
+                        <div class="m-4">
+                          <div class="d-flex">
+                            <div class="p-2">Qty</div>
+                            <div class="p-2">Item</div>
+                            <div class="ms-auto p-2">Amount</div>
+                          </div>
 
-                            <div class="d-flex">
-                              <div class="p-2">1</div>
-                              <div class="p-2">Hammer</div>
-                              <div class="ms-auto p-2">Php 250.00</div>
-                            </div>
+                          <div class="d-flex">
+                            <div class="p-2">1</div>
+                            <div class="p-2">Hammer</div>
+                            <div class="ms-auto p-2">Php 250.00</div>
+                          </div>
 
-                            <br><br><br><br><br>
-                            <hr>
+                          <br><br><br><br><br>
+                          <hr>
 
-                            <div class="d-flex pt-0 p-2">
-                              <div>Subtotal</div>
-                              <div class="ms-auto">Php 250.00</div>
-                            </div>
+                          <div class="d-flex pt-0 p-2">
+                            <div>Subtotal</div>
+                            <div class="ms-auto">Php 250.00</div>
+                          </div>
 
-                            <div class="d-flex p-2">
-                              <div >Taxes and Fees</div>
-                              <div class="ms-auto">Php 2.50</div>
-                            </div>
+                          <div class="d-flex p-2">
+                            <div >Taxes and Fees</div>
+                            <div class="ms-auto">Php 2.50</div>
+                          </div>
 
-                            <div class="d-flex p-2 fs-5 fw-bold">
-                              <div>Order Total</div>
-                              <div class="ms-auto">Php 252.50</div>
-                            </div>
+                          <div class="d-flex p-2 fs-5 fw-bold">
+                            <div>Order Total</div>
+                            <div class="ms-auto">Php 252.50</div>
                           </div>
                         </div>
-                        
-                        <br>
-                        <!--Order Type-->
+                      </div>
+                      
+                      <br>
 
-                        <div class="forms">
-                          <div class="d-flex">
+                      <!--Order Type-->
+                      <div class="forms">
+                        <div class="d-flex">
                             <div><label>Contact:</label></div>
                             <div class="ms-auto"><p>Joel Rio Balaba</p></div>
-                          </div>
+                        </div>
               
-                          <div class="d-flex">
+                        <div class="d-flex">
                             <div><label>Phone Number:</label></div>
                             <div class="ms-auto"><p>+63 9493256898</p></div>
-                          </div>
+                        </div>
               
-                          <div class="d-flex">
+                        <div class="d-flex">
                             <div><label>Email address:</label></div>
                             <div class="ms-auto"><p>balabajoelrio@gmail.com</p></div>
-                          </div>
+                        </div>
               
-                          <div class="d-flex">
+                        <div class="d-flex">
                             <div><label>Delivery address</label></div>
                             <div class="ms-auto"><p>Sambag 4, Guadalupe, Cebu City 6000</p></div>
-                          </div>
+                        </div>
               
-                          <div class="d-flex">
+                        <div class="d-flex">
                             <div><label>Order type:</label></div>
                             <div class="ms-auto"><p>Deliver</p></div>
-                          </div>
+                        </div>
               
-                          <div class="d-flex">
-                            <div><label>Preferred date:</label></div>
-                            <div class="ms-auto"><p>12/25/2023 12:00 AM</p></div>
-                          </div>
+                        <div class="d-flex">
+                          <div><label>Preferred date:</label></div>
+                          <div class="ms-auto"><p>12/25/2023 12:00 AM</p></div>
+                        </div>
               
-                          <div class="d-flex">
+                        <div class="d-flex">
                             <div><label>Payment method:</label></div>
                             <div class="ms-auto"><p>Cash on delivery</p></div>
-                          </div>
+                        </div>
               
-                          <div>
+                        <div>
                             <label for="textarea" class="form-label">Special Instruction:</label>
                             <textarea class="form-control" placeholder="Type here and let us know." id="textarea"></textarea>
                             <p class="text-end">500 character left</p>
-                          </div>
                         </div>
-                      </form>
+                      </div>
+                    </form>
 
-                    </div>
                   </div>
-        
+                  </div>
+
+                  <!--Save & Print button-->
                   <div class="modal-footer">
-        
-                    <button type="button" class="btn btn-primary">Save</button>
-                    <button type="button" class="btn btn-warning">Print</button>
-      
+                    <i class="bi bi-download fs-1"></i>
+                    <i class="bi bi-printer fs-1" onclick="window.print();return false;"></i> 
                   </div>
-                  
                 </div>
               </div>
             </div>
-            </form>
+
           </div>
+
         </div>
       </form>
     </div>
   </div>
-
+  
   <br>
   <br>
 
@@ -702,12 +728,11 @@
       <hr>
 
       <div class="text-center pb-0 text-light">
-      <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
-      <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
+        <img src="5.1.png" alt="logo" style="width: 50px; height: 50px;">
+        <p>Copyright <i class="bi bi-c-circle"></i> 2023 SpeedBuild PH. All rights reserved.</p>
       </div>
 
     </div>
-
   </footer>
 
   <!--Validation Script-->
