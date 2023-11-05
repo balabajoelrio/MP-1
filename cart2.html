@@ -147,6 +147,17 @@
         }
       }
 
+      /*print visible page*/
+      @media print {
+        body * {
+          visibility: hidden;
+        }
+
+      #print-container, #print-container * {
+        visibility: visible;
+         }
+      }
+
       
   </style>
 </head>
@@ -543,20 +554,6 @@
               </div>
             </div>
 
-            <!--print visible page-->
-            <style>
-              @media print {
-                body * {
-                  visibility: hidden;
-                }
-
-                #print-container, #print-container * {
-                  visibility: visible;
-                }
-              }
-
-            </style>
-
             <!-- Modal -->
             <div class="modal fade" id="checkoutbtn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="#checkoutbtn" aria-hidden="true">
               <div class="modal-dialog">
@@ -661,8 +658,14 @@
 
                   <!--Save & Print button-->
                   <div class="modal-footer">
-                    <i type="button" class="bi bi-download fs-1"></i>
+                    <div class="d_btn">
+                      <a href="Orderdetails.pdf" style="color: black;" download>
+                        <i type="button" class="bi bi-download fs-1"></i>
+                      </a>
+                    </div>
+                    <div class="print_btn">
                     <i type="button" class="bi bi-printer fs-1" onclick="window.print();return false;"></i> 
+                    </div>
                   </div>
                 </div>
               </div>
