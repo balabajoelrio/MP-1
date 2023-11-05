@@ -10,21 +10,8 @@
     
     <title>Terms of Service</title>
     <style>
-      .modal-footer {
-        justify-content: center;
-      }
-
-      #logo{
-        margin: 0;
-        height: 40px;
-      }
-
-      .signup {
-        text-decoration: none;
-      }
-
       .gradiant {
-        height: 200px;
+        height: 150px;
         background-color: rgb(36, 35, 35); 
         background-image: linear-gradient(rgb(36, 35, 35), rgb(93, 92, 92));
       }
@@ -136,166 +123,14 @@
   <!--Header-->
   <div class="gradiant container-fluid">
 
-    <div class="d-flex">
-      <div class="me-auto p-2" type="button"> <a href="merchantsignin.html" style="text-decoration: none; color:rgb(255, 183, 0);">Merchant Center</a></div>
-      <div class="d-flex align-items-end">
-        <div>
-          <button type="button" class="btn btn-border-0 text-warning" data-bs-toggle="modal" data-bs-target="#login">Login</button>
-        </div>
-
-        <div>
-          <button type="button" class="btn btn-border-0 text-warning"><a href="signup.html" class="signup text-warning"> Sign Up </a></button>
-        </div>
-      </div>
-    </div>
-
-    <br><br>
+    <br>
     <h1 class="text-warning text-center" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">SpeedBuild PH</h1>
     <p class="text-light text-center fst-italic" style="font-family: cursive;">Your neigboorhood home construction materials supplier!</p>
 
   </div>
   <!--End of Header-->
 
-  <!--Sign In-->
-  <div class="modal" id="login" tabindex="-1" aria-labelledby="loginmodal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-secondary text-warning">
-          <h1 class="modal-title fs-5" id="login">SpeedBuild PH</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <h3>Login</h3>
-            <br>
-            <form class="needs-validation" novalidate action="myaccount.html">
-              <div class="col">
-                <label for="usernamevalidation" class="form-label"></label> Username </label>
-                <input type="username" class="form-control" id="usernamevalidation" placeholder="Enter username" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please enter username.</div>
-              </div>
-              <br>
-              <div class="col">
-                <label for="passwordvalidation" class="form-label"></label> Password </label>
-                <input type="password" class="form-control" id="passwordvalidation" placeholder="Enter password" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please enter password.</div>
-              </div>
-              <br>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> Remember Me</label>
-              </div>
-              <br>
-              <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-warning"> Sign in </button>
-              </div>
-              <span id="forgetpass" class="justify-content-md-center"><a href="forgetpass.html">Forget Password?</a></span>
-            </form>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <label>Don't have an account? <a href="signup.html" style="text-decoration: none;"><b>Sign Up</b></a></label>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End of Sign in-->
-  
-  <!--Navigation Bar-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="5.1.png" alt="logo" id="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Hot Deals!</a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="FHACS.html">Fuents Hardware And Construction Supplies</a></li>
-              <li><a class="dropdown-item" href="PTLHSAGM.html">PTL Housing Supply And General Merchandise</a></li>
-              <!--<li><a class="dropdown-item" href="#">Store 3</a></li>
-              <li><a class="dropdown-item" href="#">Store 4</a></li>
-              <li><a class="dropdown-item" href="#">Store 5</a></li>-->
-              <hr>
-              <li><a class="dropdown-item" href="merchantsignup.html">Add your store</a></li>
-            </ul>
-          </li>
-          <!--<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categories</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Air conditioning</a></li>
-              <li><a class="dropdown-item" href="#">Appropriate technology</a></li>
-              <li><a class="dropdown-item" href="#">Architectural design</a></li>
-              <li><a class="dropdown-item" href="#">Ceilings</a></li>
-              <li><a class="dropdown-item" href="#">Composite materials</a></li>
-              <li><a class="dropdown-item" href="#">Concrete</a></li>
-              <li><a class="dropdown-item" href="#">Doors</a></li>
-              <li><a class="dropdown-item" href="#">Door furniture</a></li>
-              <li><a class="dropdown-item" href="#">Electrical systems</a></li>
-              <li><a class="dropdown-item" href="#">Fire suppression</a></li>
-              <li><a class="dropdown-item" href="#">Floors</a></li>
-              <li><a class="dropdown-item" href="#">Furniture</a></li>
-              <li><a class="dropdown-item" href="#">Heating and ventilation</a></li>
-              <li><a class="dropdown-item" href="#">House painting</a></li>
-              <li><a class="dropdown-item" href="#">Masonry</a></li>
-              <li><a class="dropdown-item" href="#">Metals</a></li>
-              <li><a class="dropdown-item" href="#">Moisture protection</a></li>
-              <li><a class="dropdown-item" href="#">Plastics</a></li>
-              <li><a class="dropdown-item" href="#">Plumbing</a></li>
-              <li><a class="dropdown-item" href="#">Roofs</a></li>
-              <li><a class="dropdown-item" href="#">Safety codes</a></li>
-              <li><a class="dropdown-item" href="#">Security</a></li>
-              <li><a class="dropdown-item" href="#">Steel frames</a></li>
-              <li><a class="dropdown-item" href="#">Telecommunications</a></li>
-              <li><a class="dropdown-item" href="#">Thermal protection</a></li>
-              <li><a class="dropdown-item" href="#">Vertical transport devices</a></li>
-              <li><a class="dropdown-item" href="#">Walls</a></li>
-              <li><a class="dropdown-item" href="#">Wood</a></li>
-              <li><a class="dropdown-item" href="#">Wood finishing materials</a></li>
-              <li><a class="dropdown-item" href="#">Wood working</a></li>
-              <li><a class="dropdown-item" href="#">Windows</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">List of Woods</a></li>-
-            </ul> 
-          </li>-->
-          <li class="nav-item"><a class="nav-link" href="track.html">Track Orders</a></li>                
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Rental</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://www.tuugo.ph/Companies/rmj-equipment-rental/0220001189648">RMJ Equipment Rental</a></li>
-              <li><a class="dropdown-item" href="http://emmantrading-equipmentrental.com/">Emman Trading and Equipment Rental</a></li>
-              <li><a class="dropdown-item" href="https://hesrealequipment.com.ph/">Hesreal Development Corporation</a></li>
-              <!--<li><a class="dropdown-item" href="#">Boom Truck</a></li>
-              <li><a class="dropdown-item" href="#">Crane</a></li>
-              <li><a class="dropdown-item" href="#">Excavator</a></li>
-              <li><a class="dropdown-item" href="#">Forklift</a></li>
-              <li><a class="dropdown-item" href="#">Generator</a></li>
-              <li><a class="dropdown-item" href="#">Grader</a></li>
-              <li><a class="dropdown-item" href="#">Hydraulic Breaker</a></li>
-              <li><a class="dropdown-item" href="#">Jack Hammer</a></li>
-              <li><a class="dropdown-item" href="#">Light Tower</a></li>
-              <li><a class="dropdown-item" href="#">Manlift</a></li>
-              <li><a class="dropdown-item" href="#">Road Roller</a></li>
-              <li><a class="dropdown-item" href="#">Scissor Lift</a></li>
-              <li><a class="dropdown-item" href="#">Skit Steer Loader</a></li>
-              <li><a class="dropdown-item" href="#">Telehandler</a></li>
-              <li><a class="dropdown-item" href="#">Telescopic Clamshell</a></li>
-              <li><a class="dropdown-item" href="#">Welding Machine</a></li>
-              <li><a class="dropdown-item" href="#">Wheel Loader</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Partner with us</a></li>-->
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="maps.html">Near Me</a></li> 
-        </ul>
-
-      </div>
-    </div>
-  </nav>
+ 
 
   <!--Privacy Policy Content-->
 
