@@ -8,20 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="9.1.png">
     
-    <title>SpeedBuild PH</title>
+    <title>Privacy Policy</title>
     <style>
       .modal-footer {
         justify-content: center;
-      }
-
-      #cart {
-        float: right;
-        color: black;
-      }
-
-      #searchgroup {
-        margin-right: auto;
-        margin-left: auto;
       }
 
       #logo{
@@ -39,16 +29,6 @@
         background-image: linear-gradient(rgb(36, 35, 35), rgb(93, 92, 92));
       }
 
-      .carousel-item {
-        object-fit: cover;
-        image-resolution: 100%;
-      }
-
-      .carousel-inner img {
-        margin: auto;
-        width: 100px;
-      }
-
       .footer {
         padding: 50px 0;
         margin: 0;
@@ -59,7 +39,6 @@
 
       #footer-container {
         max-width: 1170px;
-
         margin: auto;
       }
 
@@ -223,52 +202,6 @@
     </div>
   </div>
   <!--End of Sign in-->
-
-  <!--Sign In through cart-->
-  <div class="modal" id="cartlogin" tabindex="-1" aria-labelledby="cartloginmodal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header bg-secondary text-warning">
-        <h1 class="modal-title fs-5" id="cartlogin">SpeedBuild PH</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <h3>Login</h3>
-          <br>
-          <form class="needs-validation" novalidate action="cart2.html">
-            <div class="col">
-              <label for="usernamevalidation" class="form-label"></label> Username </label>
-              <input type="username" class="form-control" id="usernamevalidation" placeholder="Enter username" required>
-              <div class="valid-feedback"></div>
-              <div class="invalid-feedback">Please enter username.</div>
-            </div>
-            <br>
-            <div class="col">
-              <label for="passwordvalidation" class="form-label"></label> Password </label>
-              <input type="password" class="form-control" id="passwordvalidation" placeholder="Enter password" required>
-              <div class="valid-feedback"></div>
-              <div class="invalid-feedback">Please enter password.</div>
-            </div>
-            <br>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox"> Remember Me</label>
-            </div>
-            <br>
-            <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-warning"> Sign in </button>
-            </div>
-            <span id="forgetpass" class="justify-content-md-center"><a href="forgetpass.html">Forget Password?</a></span>
-          </form>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <label>Don't have an account? <a href="signup.html" style="text-decoration: none;"><b>Sign Up</b></a></label>
-      </div>
-    </div>
-  </div>
-  </div>
   
   <!--Navigation Bar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -364,182 +297,47 @@
     </div>
   </nav>
 
-  <!--Search Bar & Cart-->
-  <div class="container p-3">
-    <a href="#"><i class="bi bi-cart4" style="font-size: 2rem;" id="cart" data-bs-toggle="modal" data-bs-target="#cartlogin">
-      <span class="position-absolute translate-middle badge rounded-pill bg-danger fs-6">
-        1
-      </span>
-    </i></a>
+  <!--Privacy Policy Content-->
 
-    <div class="w-50 shadow" id="searchgroup">
-      <div class="input-group">
-        <input type="search" class="form-control" placeholder="Search materials" id="search">
-        <button type="submit" class="border rounded-end">
-          <i class="bi bi-search"></i>
-        </button>
-      </div>   
-    </div>
-  </div>  
-
-  <!-- Carousel -->
-  <div class="container pb-4">
+  <div class="container m-5">
+    <h1>SpeedBuild PH Privacy Policy</h1>
     
-    <div id="indexcarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#indexcarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#indexcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#cindexcarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#cindexcarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="Carousel1.jpg" class="d-block w-50 h-75" alt="carpenter bag">
-        </div>
-        <div class="carousel-item">
-          <img src="Carousel2.jpg" class="d-block w-50 h-40" alt="drill set">
-        </div>
-        <div class="carousel-item">
-          <img src="Carousel3.jpg" class="d-block w-50" alt="wrench set">
-        </div>
-        <div class="carousel-item">
-          <img src="Carousel4.jpg" class="d-block w-50" alt="wrench set">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#indexcarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#indexcarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-
-  <!--Products-->
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod1.png" class="object-fit-lg-contain mb-5 mt-4" alt="..."> 
-        <div class="card-body">
-          <h5 class="card-title">Hammer</h5>
-          <p class="card-text">Wooden Handle</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod2.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Hammer</h5>
-          <p class="card-text">Steel Handle</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod3.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Nails</h5>
-          <p class="card-text">Common nails</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod4.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Crowbar</h5>
-          <p class="card-text">Steel crowbar</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div> 
-
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod5.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Chisel</h5>
-          <p class="card-text">1/4 (6 mm) chisel</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div> 
-
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod6.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Door lock</h5>
-          <p class="card-text">Modern door lock</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div> 
-
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod7.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Steel wool</h5>
-          <p class="card-text">Steel wool</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div> 
-
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod8.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Shovel</h5>
-          <p class="card-text">Multi-use shovel</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div> 
-
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod9.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Bulb Wire</h5>
-          <p class="card-text">Large bulb wires</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-      
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod10.jpg" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Door Jamb</h5>
-          <p class="card-text">Fine door jamb</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div> 
-
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod11.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Twin Window</h5>
-          <p class="card-text">Twin sliding side to side window</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div> 
-
-      <div class="card text-center m-1" style="width: 12rem;">
-        <img src="prod12.png" class="card-img-" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Twin Window</h5>
-          <p class="card-text">Twin sliding up & down window</p>
-          <p class="card-text"> <b>Php. 250.00</b></p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div> 
-    </div>
+    <p>Last Updated: 11/05/2023 </p>
+    <p class="fw-bold">Introduction</p>
+    <p>Welcome to SpeedBuild PH ("we," "us," or "our"). We are committed to protecting your privacy and the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and protect your personal information. By using our website or app, you consent to the practices described in this Privacy Policy.</p>
+    <p class="fw-bold">Information We Collect</p>
+    <p class="fw-bold">2.1. Information You Provide</p> 
+    <p>We collect information you provide when you create an account, make a purchase, or interact with our services. This may include your name, email address, postal address, phone number, and payment information.</p>
+    <p class="fw-bold">2.2. Automatically Collected Information</p>
+    <p>We may collect certain information automatically, such as your IP address, device information, browser type, and usage data when you access our website or app.</p>
+    <p class="fw-bold">2.3. Cookies and Similar Technologies</p>
+    <p>We use cookies and similar technologies to collect information about your browsing and usage patterns. You can manage cookie preferences through your browser settings.</p>
+    <p class="fw-bold">How We Use Your Information</p>
+    <p>We use the information we collect for various purposes, including but not limited to:</p>
+    <p>Providing and improving our services</p>
+    <p>Personalizing your experience</p>
+    <p>Processing transactions</p>
+    <p>Communicating with you</p>
+    <p>Marketing and advertising</p>
+    <p>Disclosure of Your Information</p>
+    <p class="fw-bold">We may share your personal information with third parties in certain circumstances, such as:</p>
+    <p>Service providers and business partners</p>
+    <p>Legal requirements and law enforcement</p>
+    <p>Business transfers and corporate transactions</p>
+    <p class="fw-bold">Your Choices</p>
+    <p>You have certain rights and choices regarding your personal information, including the right to access, correct, or delete your data. To exercise these rights, please contact us at <a href="#">support@speedbuildph.co</a>.</p>
+            
+    <p class="fw-bold">Security</p>
+    <p>We take reasonable measures to protect your personal information from unauthorized access, disclosure, or destruction.</p>
+            
+    <p class="fw-bold">Children's Privacy</p>
+    <p>Our services are not intended for children under the age of 18. We do not knowingly collect personal information from children.</p>
+            
+    <p class="fw-bold">Changes to this Privacy Policy</p>
+    <p>We may update this Privacy Policy to reflect changes in our practices. We will notify you of significant changes through our website or other means.</p>
+            
+    <p class="fw-bold">Contact Us</p>
+    <p>If you have questions or concerns about this Privacy Policy, please contact us at <a href="#">support@speedbuildph.co</a>.</p>
   </div>
 
   <br>
@@ -554,8 +352,7 @@
           <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Our Services</a></li>
-            <li><a href="tos.html">Terms of Service</a></li>
-            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
 
         </div>
