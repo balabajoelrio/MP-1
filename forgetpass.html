@@ -37,7 +37,7 @@
             cursor: pointer;
             opacity: 0.8;
             position: fixed;
-            bottom: 122px;
+            bottom: 0px;
             right: 0px;
             width: 280px;
         }
@@ -117,6 +117,10 @@
             <div class="col"></div>
             <div class="col-6">
                 <form class="form-control shadow needs-validation" novalidate action="#" id="forgetpass">
+                    <div class="d-flex">
+                        <h5 class="me-auto">Forget Password</h5>
+                        <button type="button" class="btn-close" onclick="history.back()" aria-label="Close"></button>
+                    </div>
                     <h6>Please provide your <b>SpeedBuild PH</b> email address and we'll send you a link to reset your password.</h6>
 
                     <div class="mt-4">
@@ -127,9 +131,8 @@
                     <div class="row mt-4">
                         <div class="d-flex">
                             <div class="flex-grow-1">
-                                <button type="submit" class="btn btn-primary" onclick="resetlink()">Submit</button>
+                                <button type="submit" class="btn btn-warning" onclick="resetlink()">Submit</button>
                             </div>
-                            <button type="button" class="btn btn-secondary"><a href="index.html" style="text-decoration: none; color: white;"> Cancel </a></button>
                         </div>
                     </div>
                 </form>
