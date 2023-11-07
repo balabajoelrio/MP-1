@@ -24,17 +24,11 @@
             background-image: linear-gradient(darkgray, rgb(93, 92, 92));
         }
 
-        .custom-class {
-            display: none;
-        }
-        
-
-        @include media-breakpoint-up(sm) {
-            .custom-class {
-                display: block;
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+            width: 100%;
             }
         }
-
         
     </style>
     
@@ -48,8 +42,8 @@
     
     <!--Content & Form-->
     <div class="row p-5" id="background">
-        <div class="col-7 d-flex">
-            <img src="5.1.png" alt="logo" style="width: 200; height: 200; margin: auto; padding: auto;">
+        <div class="col-7">
+            <img src="5.1.png" alt="logo" style="width: 100%;">
         </div>        
 
         <div class="col">

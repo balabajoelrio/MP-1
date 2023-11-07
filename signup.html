@@ -29,6 +29,12 @@
         height: 100%;
       }
 
+      @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+            width: 100%;
+            }
+        }
+
         
     </style>
     
@@ -42,8 +48,8 @@
 
   <!--Content & Form-->
   <div class="row p-5">
-    <div class="col-6 flex">
-      <img src="9.1.png" alt="logo" id="logo" style="width: 200; height: 200; margin: auto; padding: auto;">
+    <div class="col-6">
+      <img src="9.1.png" alt="logo" id="logo" style="width: 100%">
     </div>
 
     <!--Sign Up form-->

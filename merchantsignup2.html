@@ -17,7 +17,7 @@
         body {
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
+           flex-direction: column;
         }
 
         #background {
@@ -25,17 +25,11 @@
         background-image: linear-gradient(darkgray, rgb(93, 92, 92));
         }
 
-        .custom-class {
-            display: none;
-        }
-        
-
-        @include media-breakpoint-up(sm) {
-            .custom-class {
-                display: block;
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+            width: 100%;
             }
         }
-
         
     </style>
     
@@ -48,12 +42,12 @@
     </div>
     
     <!--Content & Form-->
-    <div class="row p-5 bg-secondary" id="background">
-        <div class="col-7 d-flex">
-            <img src="5.1.png" alt="logo" style="width: 200; height: 200; margin: auto; padding: auto;">
+    <div class="row p-5 bg-secondary d-flex" id="background">
+        <div class="col-7">
+            <img src="5.1.png" alt="logo" style="width: 100%;">
         </div>    
 
-        <div class="col">
+        <div class="col ms-auto">
             <div class="form-control shadow">
                 <div class="d-flex p-3 pb-0">
                     <h3 class="me-auto">Merchant Sign Up</h3>
