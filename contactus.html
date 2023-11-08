@@ -126,6 +126,82 @@
         }
       }
 
+      * {
+        box-sizing: border-box;
+        }
+
+        /* Button used to open the chat form - fixed at the bottom of the page */
+        .open-button {
+          background-color:goldenrod;
+          color: white;
+          font-weight: bold;
+          padding: 16px 20px;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          opacity: 0.8;
+          position: fixed;
+          bottom: 10px;
+          right: 5px;
+          width: 200px;
+        }
+
+        /* The popup chat - hidden by default */
+        .chat-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        /* Full-width textarea */
+        .form-container textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+            resize: none;
+            min-height: 200px;
+        }
+
+        /* When the textarea gets focus, do something */
+        .form-container textarea:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for the submit/send button */
+        .form-container .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom:10px;
+            opacity: 0.8;
+        }
+
+        /* Add a red background color to the cancel button */
+        .form-container .cancel {
+            background-color: red;
+        }
+
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+        }
+
     </style>
 </head>
 <body class="bg-dark-subtle">
@@ -146,49 +222,70 @@
   <!--End of Header-->
     
     
-    <h1 class="text-center bg-warning pt-2 pb-2">Contact Us</h1>
+  <h1 class="text-center bg-warning pt-2 pb-2">Contact Us</h1>
 
-    <div class="container-fluid form-control p-5 m-5 shadow" id="contactform">
-        <h2>Contact Form</h2>        
+  <div class="container-fluid form-control p-5 m-5 shadow" id="contactform">
+    <h2>Contact Form</h2>        
         
-        <form action="submit_contact.php" method="post">
-            <div class="forms pb-2">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-             </div>
+    <form action="submit_contact.php" method="post">
+      <div class="forms pb-2">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
                     
-            <div class="forms pb-2 ">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>                
-            </div>
+      <div class="forms pb-2 ">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>                
+      </div>
             
-            <div class="forms pb-2">
-                <label for="message">Message:</label>
-                <textarea id="message" class="form-control" name="message" rows="4" required></textarea>
-            </div>
+      <div class="forms pb-2">
+        <label for="message">Message:</label>
+        <textarea id="message" class="form-control" name="message" rows="4" required></textarea>
+      </div>
 
-            <div class="d-flex">
-                <button type="submit" class="btn btn-warning mt-2"> Submit</button>
-                <a href="index.html" type="button" class="btn btn-secondary mt-2 ms-auto"> Cancel</a>
-            </div>
+      <div class="d-flex">
+        <button type="submit" class="btn btn-warning mt-2"> Submit</button>
+        <a href="index.html" type="button" class="btn btn-secondary mt-2 ms-auto"> Cancel</a>
+      </div>
             
-        </form>
-    </div>
+    </form>
+  </div>
 
     
 
         
-        <div class="bg-light p-5 ">
-            <label class="fs-5">Visit us</label>
-            <p><b>Sitio Sambag 4, Guadalupe, Cebu City, 6000 </b> </p>
-            <label class="fs-5">Give us a call</label>
-            <p><strong>Phone:</strong> (123) 456-7890 </p>
-            <label class="fs-5">Send your inquiry</label>
-            <p><strong>Email:</strong> support@speedbuildph.com</p>    
-        </div>
-        <div class="maps p-2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1166.9903057962406!2d123.88004814961452!3d10.320114763936603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99f11857b90e9%3A0x64578cc0e86c911e!2sSambag%204!5e0!3m2!1sen!2sph!4v1699213518117!5m2!1sen!2sph" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+  <div class="bg-light p-5 ">
+    <i class="bi bi-geo-alt fs-1"></i>
+    <label class="fs-5">Visit us</label>
+    <p><b>Sitio Sambag 4, Guadalupe, Cebu City, 6000 </b> </p>
+
+    <i class="bi bi-telephone fs-1"></i>
+    <label class="fs-5">Give us a call</label>
+    <p><strong>Phone:</strong> (123) 456-7890 </p>
+
+    <i class="bi bi-envelope fs-1"></i>
+    <label class="fs-5">Send your inquiry</label>
+    <p><strong>Email:</strong> support@speedbuildph.com</p>    
+  </div>
+      
+  <div class="maps m-2 border border-warning">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1166.9903057962406!2d123.88004814961452!3d10.320114763936603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99f11857b90e9%3A0x64578cc0e86c911e!2sSambag%204!5e0!3m2!1sen!2sph!4v1699213518117!5m2!1sen!2sph" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!--Chat-->
+  <button class="open-button" onclick="openForm()">Chat</button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Chat</h1>
+
+      <label for="msg"><b>Message</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
     
 
   
@@ -272,6 +369,19 @@
   }, false)
   })
   })()
+
+  function resetlink() {
+        alert("Password reset link sent! Please check your inbox.");
+    }
+
+  function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+  function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+
   </script>
 
 </body>
